@@ -35,7 +35,7 @@ namespace BasicInterfaces
 
     class Image : Document
     {
-        public static void Print()
+        public void Print()
         {
             Console.WriteLine("Image printed");
         }
@@ -55,7 +55,7 @@ namespace BasicInterfaces
             Image i = new Image();
             i.Save();
             i.Load();
-            //i.Print();
+            i.Print();
         }
     }
 }
